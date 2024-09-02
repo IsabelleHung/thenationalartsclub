@@ -1,62 +1,76 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The National Art's Club</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-      .container {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: black;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The National Art's Club</title>
+  <style>
+    body {
+      background-color: black;
     }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+
+    }
+
     .image-container {
-        flex: 1;
-        min-width: 50%;
-        text-align: center;
+      flex: 1;
+      min-width: 50%;
+      text-align: center;
     }
+
     .image-container img {
-        width: 80%;
-        height: auto;
+      width: 80%;
+      height: auto;
     }
+
     .button {
-        display: block;
-        margin: 10px auto;
-        width: 70%;
-        padding: 20px;
-        background-color: #322c96;
-        color: white;
-        border: none;
-        cursor: pointer;
+      display: block;
+      margin: 10px auto;
+      width: 80%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      background-color: #322c96;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-family: "Times New Roman";
+      text-decoration: none;
+      font-size: 20px;
     }
+
     @media (max-width: 768px) {
-        .image-container {
-            min-width: 100%;
-        }
+      .image-container{
+        min-width: 100%;
+      }
     }
 
     @media (min-width: 900px) {
-        .image-container img{
-            width: 300px;
-        }
-        .image-container img{
-            width: 400px;
-        }
+      .image-container img, .button{
+        width: 300px;
+      }
+
+      .image-container img, .button {
+        width: 400px;
+      }
     }
-    </style>
+  </style>
 </head>
+
 <body>
-    <div class="container">
-        <div class="image-container">
-            <img src="img/Front.png" alt="Image 1">
-            <a class="button href="usdz/1945.usdz">View on Mobile</a>
-        </div>
-        <div class="image-container">
-            <img src="img/Back.png" alt="Image 2">
-            <a class="button href="usdz/2024.usdz">View on Mobile</a>
-        </div>
+  <div class="container">
+    <div class="image-container">
+      <img src="img/Front No-Scan.png" alt="Image 1">
+      <a class="button" href="usdz/1945.usdz">View in AR on Mobile</a>
     </div>
+    <div class="image-container">
+      <img src="img/Back No-Scan.png" alt="Image 2">
+      <a class="button" href="usdz/2024.usdz">View in AR on Mobile</a>
+    </div>
+  </div>
 </body>
+
 </html>
