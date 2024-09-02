@@ -6,6 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The National Art's Club</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+      .container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    }
+    .image-container {
+        flex: 1;
+        min-width: 50%;
+        text-align: center;
+    }
+    .image-container img {
+        width: 80%;
+        height: auto;
+    }
+    .button {
+        display: block;
+        margin: 10px auto;
+        width: 70%;
+        padding: 20px;
+        background-color: #322c96;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    @media (max-width: 768px) {
+        .image-container {
+            min-width: 100%;
+        }
+    }
+
+    @media (min-width: 900px) {
+        .image-container img{
+            width: 300px;
+        }
+        .image-container img{
+            width: 400px;
+        }
+    }
+    </style>
 </head>
 <body>
     <div class="container">
